@@ -3,7 +3,6 @@ grammar NCalc;
 options
 {
 	output=AST;
-	ASTLabelType=CommonTree;
 	language=CSharp3;
 }
 

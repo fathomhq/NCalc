@@ -1,4 +1,4 @@
-// $ANTLR 3.3.0.7239 C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g 2011-08-08 11:08:01
+// $ANTLR 3.3 Nov 30, 2010 12:50:56 NCalc.g 2013-08-30 12:41:21
 
 // The variable 'variable' is assigned but its value is never used.
 #pragma warning disable 219
@@ -12,26 +12,11 @@ using Stack = System.Collections.Generic.Stack<object>;
 using List = System.Collections.IList;
 using ArrayList = System.Collections.Generic.List<object>;
 
-[System.CodeDom.Compiler.GeneratedCode("ANTLR", "3.3.0.7239")]
+[System.CodeDom.Compiler.GeneratedCode("ANTLR", "3.3 Nov 30, 2010 12:50:56")]
 [System.CLSCompliant(false)]
 public partial class NCalcLexer : Antlr.Runtime.Lexer
 {
 	public const int EOF=-1;
-	public const int DATETIME=4;
-	public const int DIGIT=5;
-	public const int E=6;
-	public const int EscapeSequence=7;
-	public const int FALSE=8;
-	public const int FLOAT=9;
-	public const int HexDigit=10;
-	public const int ID=11;
-	public const int INTEGER=12;
-	public const int LETTER=13;
-	public const int NAME=14;
-	public const int STRING=15;
-	public const int TRUE=16;
-	public const int UnicodeEscape=17;
-	public const int WS=18;
 	public const int T__19=19;
 	public const int T__20=20;
 	public const int T__21=21;
@@ -62,6 +47,21 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 	public const int T__46=46;
 	public const int T__47=47;
 	public const int T__48=48;
+	public const int INTEGER=4;
+	public const int FLOAT=5;
+	public const int STRING=6;
+	public const int DATETIME=7;
+	public const int TRUE=8;
+	public const int FALSE=9;
+	public const int ID=10;
+	public const int NAME=11;
+	public const int LETTER=12;
+	public const int DIGIT=13;
+	public const int E=14;
+	public const int EscapeSequence=15;
+	public const int UnicodeEscape=16;
+	public const int HexDigit=17;
+	public const int WS=18;
 
     // delegates
     // delegators
@@ -83,7 +83,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 
 		OnCreated();
 	}
-	public override string GrammarFileName { get { return "C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g"; } }
+	public override string GrammarFileName { get { return "NCalc.g"; } }
 
 	private static readonly bool[] decisionCanBacktrack = new bool[0];
 
@@ -106,12 +106,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__19;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:7:7: ( '!' )
+			// NCalc.g:7:7: ( '?' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:7:9: '!'
+			// NCalc.g:7:9: '?'
 			{
 			DebugLocation(7, 9);
-			Match('!'); 
+			Match('?'); 
 
 			}
 
@@ -141,13 +141,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__20;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:8:7: ( '!=' )
+			// NCalc.g:8:7: ( ':' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:8:9: '!='
+			// NCalc.g:8:9: ':'
 			{
 			DebugLocation(8, 9);
-			Match("!="); 
-
+			Match(':'); 
 
 			}
 
@@ -177,12 +176,13 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__21;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:9:7: ( '%' )
+			// NCalc.g:9:7: ( '||' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:9:9: '%'
+			// NCalc.g:9:9: '||'
 			{
 			DebugLocation(9, 9);
-			Match('%'); 
+			Match("||"); 
+
 
 			}
 
@@ -212,12 +212,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__22;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:10:7: ( '&&' )
+			// NCalc.g:10:7: ( 'or' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:10:9: '&&'
+			// NCalc.g:10:9: 'or'
 			{
 			DebugLocation(10, 9);
-			Match("&&"); 
+			Match("or"); 
 
 
 			}
@@ -248,12 +248,13 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__23;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:11:7: ( '&' )
+			// NCalc.g:11:7: ( '&&' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:11:9: '&'
+			// NCalc.g:11:9: '&&'
 			{
 			DebugLocation(11, 9);
-			Match('&'); 
+			Match("&&"); 
+
 
 			}
 
@@ -283,12 +284,13 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__24;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:12:7: ( '(' )
+			// NCalc.g:12:7: ( 'and' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:12:9: '('
+			// NCalc.g:12:9: 'and'
 			{
 			DebugLocation(12, 9);
-			Match('('); 
+			Match("and"); 
+
 
 			}
 
@@ -318,12 +320,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__25;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:13:7: ( ')' )
+			// NCalc.g:13:7: ( '|' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:13:9: ')'
+			// NCalc.g:13:9: '|'
 			{
 			DebugLocation(13, 9);
-			Match(')'); 
+			Match('|'); 
 
 			}
 
@@ -353,12 +355,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__26;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:14:7: ( '*' )
+			// NCalc.g:14:7: ( '^' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:14:9: '*'
+			// NCalc.g:14:9: '^'
 			{
 			DebugLocation(14, 9);
-			Match('*'); 
+			Match('^'); 
 
 			}
 
@@ -388,12 +390,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__27;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:15:7: ( '+' )
+			// NCalc.g:15:7: ( '&' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:15:9: '+'
+			// NCalc.g:15:9: '&'
 			{
 			DebugLocation(15, 9);
-			Match('+'); 
+			Match('&'); 
 
 			}
 
@@ -423,12 +425,13 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__28;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:16:7: ( ',' )
+			// NCalc.g:16:7: ( '==' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:16:9: ','
+			// NCalc.g:16:9: '=='
 			{
 			DebugLocation(16, 9);
-			Match(','); 
+			Match("=="); 
+
 
 			}
 
@@ -458,12 +461,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__29;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:17:7: ( '-' )
+			// NCalc.g:17:7: ( '=' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:17:9: '-'
+			// NCalc.g:17:9: '='
 			{
 			DebugLocation(17, 9);
-			Match('-'); 
+			Match('='); 
 
 			}
 
@@ -493,12 +496,13 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__30;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:18:7: ( '/' )
+			// NCalc.g:18:7: ( '!=' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:18:9: '/'
+			// NCalc.g:18:9: '!='
 			{
 			DebugLocation(18, 9);
-			Match('/'); 
+			Match("!="); 
+
 
 			}
 
@@ -528,12 +532,13 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__31;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:19:7: ( ':' )
+			// NCalc.g:19:7: ( '<>' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:19:9: ':'
+			// NCalc.g:19:9: '<>'
 			{
 			DebugLocation(19, 9);
-			Match(':'); 
+			Match("<>"); 
+
 
 			}
 
@@ -563,9 +568,9 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__32;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:20:7: ( '<' )
+			// NCalc.g:20:7: ( '<' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:20:9: '<'
+			// NCalc.g:20:9: '<'
 			{
 			DebugLocation(20, 9);
 			Match('<'); 
@@ -598,12 +603,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__33;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:21:7: ( '<<' )
+			// NCalc.g:21:7: ( '<=' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:21:9: '<<'
+			// NCalc.g:21:9: '<='
 			{
 			DebugLocation(21, 9);
-			Match("<<"); 
+			Match("<="); 
 
 
 			}
@@ -634,13 +639,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__34;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:22:7: ( '<=' )
+			// NCalc.g:22:7: ( '>' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:22:9: '<='
+			// NCalc.g:22:9: '>'
 			{
 			DebugLocation(22, 9);
-			Match("<="); 
-
+			Match('>'); 
 
 			}
 
@@ -670,12 +674,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__35;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:23:7: ( '<>' )
+			// NCalc.g:23:7: ( '>=' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:23:9: '<>'
+			// NCalc.g:23:9: '>='
 			{
 			DebugLocation(23, 9);
-			Match("<>"); 
+			Match(">="); 
 
 
 			}
@@ -706,12 +710,13 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__36;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:24:7: ( '=' )
+			// NCalc.g:24:7: ( '<<' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:24:9: '='
+			// NCalc.g:24:9: '<<'
 			{
 			DebugLocation(24, 9);
-			Match('='); 
+			Match("<<"); 
+
 
 			}
 
@@ -741,12 +746,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__37;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:25:7: ( '==' )
+			// NCalc.g:25:7: ( '>>' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:25:9: '=='
+			// NCalc.g:25:9: '>>'
 			{
 			DebugLocation(25, 9);
-			Match("=="); 
+			Match(">>"); 
 
 
 			}
@@ -777,12 +782,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__38;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:26:7: ( '>' )
+			// NCalc.g:26:7: ( '+' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:26:9: '>'
+			// NCalc.g:26:9: '+'
 			{
 			DebugLocation(26, 9);
-			Match('>'); 
+			Match('+'); 
 
 			}
 
@@ -812,13 +817,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__39;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:27:7: ( '>=' )
+			// NCalc.g:27:7: ( '-' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:27:9: '>='
+			// NCalc.g:27:9: '-'
 			{
 			DebugLocation(27, 9);
-			Match(">="); 
-
+			Match('-'); 
 
 			}
 
@@ -848,13 +852,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__40;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:28:7: ( '>>' )
+			// NCalc.g:28:7: ( '*' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:28:9: '>>'
+			// NCalc.g:28:9: '*'
 			{
 			DebugLocation(28, 9);
-			Match(">>"); 
-
+			Match('*'); 
 
 			}
 
@@ -884,12 +887,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__41;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:29:7: ( '?' )
+			// NCalc.g:29:7: ( '/' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:29:9: '?'
+			// NCalc.g:29:9: '/'
 			{
 			DebugLocation(29, 9);
-			Match('?'); 
+			Match('/'); 
 
 			}
 
@@ -919,12 +922,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__42;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:30:7: ( '^' )
+			// NCalc.g:30:7: ( '%' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:30:9: '^'
+			// NCalc.g:30:9: '%'
 			{
 			DebugLocation(30, 9);
-			Match('^'); 
+			Match('%'); 
 
 			}
 
@@ -954,13 +957,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__43;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:31:7: ( 'and' )
+			// NCalc.g:31:7: ( '!' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:31:9: 'and'
+			// NCalc.g:31:9: '!'
 			{
 			DebugLocation(31, 9);
-			Match("and"); 
-
+			Match('!'); 
 
 			}
 
@@ -990,9 +992,9 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__44;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:32:7: ( 'not' )
+			// NCalc.g:32:7: ( 'not' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:32:9: 'not'
+			// NCalc.g:32:9: 'not'
 			{
 			DebugLocation(32, 9);
 			Match("not"); 
@@ -1026,13 +1028,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__45;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:33:7: ( 'or' )
+			// NCalc.g:33:7: ( '~' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:33:9: 'or'
+			// NCalc.g:33:9: '~'
 			{
 			DebugLocation(33, 9);
-			Match("or"); 
-
+			Match('~'); 
 
 			}
 
@@ -1062,12 +1063,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__46;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:34:7: ( '|' )
+			// NCalc.g:34:7: ( '(' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:34:9: '|'
+			// NCalc.g:34:9: '('
 			{
 			DebugLocation(34, 9);
-			Match('|'); 
+			Match('('); 
 
 			}
 
@@ -1097,13 +1098,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__47;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:35:7: ( '||' )
+			// NCalc.g:35:7: ( ')' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:35:9: '||'
+			// NCalc.g:35:9: ')'
 			{
 			DebugLocation(35, 9);
-			Match("||"); 
-
+			Match(')'); 
 
 			}
 
@@ -1133,12 +1133,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = T__48;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:36:7: ( '~' )
+			// NCalc.g:36:7: ( ',' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:36:9: '~'
+			// NCalc.g:36:9: ','
 			{
 			DebugLocation(36, 9);
-			Match('~'); 
+			Match(','); 
 
 			}
 
@@ -1168,9 +1168,9 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = TRUE;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:237:2: ( 'true' )
+			// NCalc.g:237:2: ( 'true' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:237:4: 'true'
+			// NCalc.g:237:4: 'true'
 			{
 			DebugLocation(237, 4);
 			Match("true"); 
@@ -1204,9 +1204,9 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = FALSE;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:241:2: ( 'false' )
+			// NCalc.g:241:2: ( 'false' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:241:4: 'false'
+			// NCalc.g:241:4: 'false'
 			{
 			DebugLocation(241, 4);
 			Match("false"); 
@@ -1240,14 +1240,14 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = ID;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:245:2: ( LETTER ( LETTER | DIGIT )* )
+			// NCalc.g:245:2: ( LETTER ( LETTER | DIGIT )* )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:245:5: LETTER ( LETTER | DIGIT )*
+			// NCalc.g:245:5: LETTER ( LETTER | DIGIT )*
 			{
 			DebugLocation(245, 5);
 			mLETTER(); 
 			DebugLocation(245, 12);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:245:12: ( LETTER | DIGIT )*
+			// NCalc.g:245:12: ( LETTER | DIGIT )*
 			try { DebugEnterSubRule(1);
 			while (true)
 			{
@@ -1266,10 +1266,20 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:
+					// NCalc.g:
 					{
 					DebugLocation(245, 12);
-					input.Consume();
+					if ((input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z'))
+					{
+						input.Consume();
+
+					}
+					else
+					{
+						MismatchedSetException mse = new MismatchedSetException(null,input);
+						DebugRecognitionException(mse);
+						Recover(mse);
+						throw mse;}
 
 
 					}
@@ -1314,12 +1324,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = INTEGER;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:249:2: ( ( DIGIT )+ )
+			// NCalc.g:249:2: ( ( DIGIT )+ )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:249:4: ( DIGIT )+
+			// NCalc.g:249:4: ( DIGIT )+
 			{
 			DebugLocation(249, 4);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:249:4: ( DIGIT )+
+			// NCalc.g:249:4: ( DIGIT )+
 			int cnt2=0;
 			try { DebugEnterSubRule(2);
 			while (true)
@@ -1339,11 +1349,10 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:
+					// NCalc.g:249:4: DIGIT
 					{
 					DebugLocation(249, 4);
-					input.Consume();
-
+					mDIGIT(); 
 
 					}
 					break;
@@ -1392,7 +1401,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = FLOAT;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:253:2: ( ( DIGIT )* '.' ( DIGIT )+ ( E )? | ( DIGIT )+ E )
+			// NCalc.g:253:2: ( ( DIGIT )* '.' ( DIGIT )+ ( E )? | ( DIGIT )+ E )
 			int alt7=2;
 			try { DebugEnterDecision(7, decisionCanBacktrack[7]);
 			try
@@ -1409,10 +1418,10 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:253:4: ( DIGIT )* '.' ( DIGIT )+ ( E )?
+				// NCalc.g:253:4: ( DIGIT )* '.' ( DIGIT )+ ( E )?
 				{
 				DebugLocation(253, 4);
-				// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:253:4: ( DIGIT )*
+				// NCalc.g:253:4: ( DIGIT )*
 				try { DebugEnterSubRule(3);
 				while (true)
 				{
@@ -1431,11 +1440,10 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:
+						// NCalc.g:253:4: DIGIT
 						{
 						DebugLocation(253, 4);
-						input.Consume();
-
+						mDIGIT(); 
 
 						}
 						break;
@@ -1453,7 +1461,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				DebugLocation(253, 11);
 				Match('.'); 
 				DebugLocation(253, 15);
-				// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:253:15: ( DIGIT )+
+				// NCalc.g:253:15: ( DIGIT )+
 				int cnt4=0;
 				try { DebugEnterSubRule(4);
 				while (true)
@@ -1473,11 +1481,10 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:
+						// NCalc.g:253:15: DIGIT
 						{
 						DebugLocation(253, 15);
-						input.Consume();
-
+						mDIGIT(); 
 
 						}
 						break;
@@ -1498,7 +1505,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				} finally { DebugExitSubRule(4); }
 
 				DebugLocation(253, 22);
-				// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:253:22: ( E )?
+				// NCalc.g:253:22: ( E )?
 				int alt5=2;
 				try { DebugEnterSubRule(5);
 				try { DebugEnterDecision(5, decisionCanBacktrack[5]);
@@ -1513,7 +1520,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:253:22: E
+					// NCalc.g:253:22: E
 					{
 					DebugLocation(253, 22);
 					mE(); 
@@ -1529,10 +1536,10 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:254:4: ( DIGIT )+ E
+				// NCalc.g:254:4: ( DIGIT )+ E
 				{
 				DebugLocation(254, 4);
-				// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:254:4: ( DIGIT )+
+				// NCalc.g:254:4: ( DIGIT )+
 				int cnt6=0;
 				try { DebugEnterSubRule(6);
 				while (true)
@@ -1552,11 +1559,10 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:
+						// NCalc.g:254:4: DIGIT
 						{
 						DebugLocation(254, 4);
-						input.Consume();
-
+						mDIGIT(); 
 
 						}
 						break;
@@ -1609,14 +1615,14 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = STRING;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:258:6: ( '\\'' ( EscapeSequence | ( options {greedy=false; } :~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) ) )* '\\'' )
+			// NCalc.g:258:6: ( '\\'' ( EscapeSequence | ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) ) )* '\\'' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:258:10: '\\'' ( EscapeSequence | ( options {greedy=false; } :~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) ) )* '\\''
+			// NCalc.g:258:10: '\\'' ( EscapeSequence | ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) ) )* '\\''
 			{
 			DebugLocation(258, 10);
 			Match('\''); 
 			DebugLocation(258, 15);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:258:15: ( EscapeSequence | ( options {greedy=false; } :~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) ) )*
+			// NCalc.g:258:15: ( EscapeSequence | ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) ) )*
 			try { DebugEnterSubRule(8);
 			while (true)
 			{
@@ -1639,7 +1645,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:258:17: EscapeSequence
+					// NCalc.g:258:17: EscapeSequence
 					{
 					DebugLocation(258, 17);
 					mEscapeSequence(); 
@@ -1648,15 +1654,25 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 					break;
 				case 2:
 					DebugEnterAlt(2);
-					// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:258:34: ( options {greedy=false; } :~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) )
+					// NCalc.g:258:34: ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) )
 					{
 					DebugLocation(258, 34);
-					// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:258:34: ( options {greedy=false; } :~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) )
+					// NCalc.g:258:34: ( options {greedy=false; } : ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' ) )
 					DebugEnterAlt(1);
-					// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:258:61: ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' )
+					// NCalc.g:258:61: ~ ( '\\u0000' .. '\\u001f' | '\\\\' | '\\'' )
 					{
 					DebugLocation(258, 61);
-					input.Consume();
+					if ((input.LA(1)>=' ' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF'))
+					{
+						input.Consume();
+
+					}
+					else
+					{
+						MismatchedSetException mse = new MismatchedSetException(null,input);
+						DebugRecognitionException(mse);
+						Recover(mse);
+						throw mse;}
 
 
 					}
@@ -1706,19 +1722,19 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = DATETIME;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:262:3: ( '#' ( options {greedy=false; } : (~ ( '#' ) )* ) '#' )
+			// NCalc.g:262:3: ( '#' ( options {greedy=false; } : (~ ( '#' ) )* ) '#' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:262:5: '#' ( options {greedy=false; } : (~ ( '#' ) )* ) '#'
+			// NCalc.g:262:5: '#' ( options {greedy=false; } : (~ ( '#' ) )* ) '#'
 			{
 			DebugLocation(262, 5);
 			Match('#'); 
 			DebugLocation(262, 9);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:262:9: ( options {greedy=false; } : (~ ( '#' ) )* )
+			// NCalc.g:262:9: ( options {greedy=false; } : (~ ( '#' ) )* )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:262:36: (~ ( '#' ) )*
+			// NCalc.g:262:36: (~ ( '#' ) )*
 			{
 			DebugLocation(262, 36);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:262:36: (~ ( '#' ) )*
+			// NCalc.g:262:36: (~ ( '#' ) )*
 			try { DebugEnterSubRule(9);
 			while (true)
 			{
@@ -1737,10 +1753,20 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:
+					// NCalc.g:262:36: ~ ( '#' )
 					{
 					DebugLocation(262, 36);
-					input.Consume();
+					if ((input.LA(1)>='\u0000' && input.LA(1)<='\"')||(input.LA(1)>='$' && input.LA(1)<='\uFFFF'))
+					{
+						input.Consume();
+
+					}
+					else
+					{
+						MismatchedSetException mse = new MismatchedSetException(null,input);
+						DebugRecognitionException(mse);
+						Recover(mse);
+						throw mse;}
 
 
 					}
@@ -1790,19 +1816,19 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = NAME;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:265:6: ( '[' ( options {greedy=false; } : (~ ( ']' ) )* ) ']' )
+			// NCalc.g:265:6: ( '[' ( options {greedy=false; } : (~ ( ']' ) )* ) ']' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:265:8: '[' ( options {greedy=false; } : (~ ( ']' ) )* ) ']'
+			// NCalc.g:265:8: '[' ( options {greedy=false; } : (~ ( ']' ) )* ) ']'
 			{
 			DebugLocation(265, 8);
 			Match('['); 
 			DebugLocation(265, 12);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:265:12: ( options {greedy=false; } : (~ ( ']' ) )* )
+			// NCalc.g:265:12: ( options {greedy=false; } : (~ ( ']' ) )* )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:265:39: (~ ( ']' ) )*
+			// NCalc.g:265:39: (~ ( ']' ) )*
 			{
 			DebugLocation(265, 39);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:265:39: (~ ( ']' ) )*
+			// NCalc.g:265:39: (~ ( ']' ) )*
 			try { DebugEnterSubRule(10);
 			while (true)
 			{
@@ -1821,10 +1847,20 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:
+					// NCalc.g:265:39: ~ ( ']' )
 					{
 					DebugLocation(265, 39);
-					input.Consume();
+					if ((input.LA(1)>='\u0000' && input.LA(1)<='\\')||(input.LA(1)>='^' && input.LA(1)<='\uFFFF'))
+					{
+						input.Consume();
+
+					}
+					else
+					{
+						MismatchedSetException mse = new MismatchedSetException(null,input);
+						DebugRecognitionException(mse);
+						Recover(mse);
+						throw mse;}
 
 
 					}
@@ -1874,9 +1910,9 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = E;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:268:3: ( ( 'E' | 'e' ) ( '+' | '-' )? ( DIGIT )+ )
+			// NCalc.g:268:3: ( ( 'E' | 'e' ) ( '+' | '-' )? ( DIGIT )+ )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:268:5: ( 'E' | 'e' ) ( '+' | '-' )? ( DIGIT )+
+			// NCalc.g:268:5: ( 'E' | 'e' ) ( '+' | '-' )? ( DIGIT )+
 			{
 			DebugLocation(268, 5);
 			if (input.LA(1)=='E'||input.LA(1)=='e')
@@ -1892,7 +1928,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				throw mse;}
 
 			DebugLocation(268, 15);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:268:15: ( '+' | '-' )?
+			// NCalc.g:268:15: ( '+' | '-' )?
 			int alt11=2;
 			try { DebugEnterSubRule(11);
 			try { DebugEnterDecision(11, decisionCanBacktrack[11]);
@@ -1907,10 +1943,20 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:
+				// NCalc.g:
 				{
 				DebugLocation(268, 15);
-				input.Consume();
+				if (input.LA(1)=='+'||input.LA(1)=='-')
+				{
+					input.Consume();
+
+				}
+				else
+				{
+					MismatchedSetException mse = new MismatchedSetException(null,input);
+					DebugRecognitionException(mse);
+					Recover(mse);
+					throw mse;}
 
 
 				}
@@ -1920,7 +1966,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			} finally { DebugExitSubRule(11); }
 
 			DebugLocation(268, 26);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:268:26: ( DIGIT )+
+			// NCalc.g:268:26: ( DIGIT )+
 			int cnt12=0;
 			try { DebugEnterSubRule(12);
 			while (true)
@@ -1940,11 +1986,10 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:
+					// NCalc.g:268:26: DIGIT
 					{
 					DebugLocation(268, 26);
-					input.Consume();
-
+					mDIGIT(); 
 
 					}
 					break;
@@ -1991,9 +2036,9 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		TraceIn("LETTER", 40);
 		try
 		{
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:272:2: ( 'a' .. 'z' | 'A' .. 'Z' | '_' )
+			// NCalc.g:272:2: ( 'a' .. 'z' | 'A' .. 'Z' | '_' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:
+			// NCalc.g:
 			{
 			DebugLocation(272, 2);
 			if ((input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z'))
@@ -2033,23 +2078,12 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		TraceIn("DIGIT", 41);
 		try
 		{
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:278:2: ( '0' .. '9' )
+			// NCalc.g:278:2: ( '0' .. '9' )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:
+			// NCalc.g:278:4: '0' .. '9'
 			{
-			DebugLocation(278, 2);
-			if ((input.LA(1)>='0' && input.LA(1)<='9'))
-			{
-				input.Consume();
-
-			}
-			else
-			{
-				MismatchedSetException mse = new MismatchedSetException(null,input);
-				DebugRecognitionException(mse);
-				Recover(mse);
-				throw mse;}
-
+			DebugLocation(278, 4);
+			MatchRange('0','9'); 
 
 			}
 
@@ -2075,14 +2109,14 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		TraceIn("EscapeSequence", 42);
 		try
 		{
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:282:2: ( '\\\\' ( 'n' | 'r' | 't' | '\\'' | '\\\\' | UnicodeEscape ) )
+			// NCalc.g:282:2: ( '\\\\' ( 'n' | 'r' | 't' | '\\'' | '\\\\' | UnicodeEscape ) )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:282:4: '\\\\' ( 'n' | 'r' | 't' | '\\'' | '\\\\' | UnicodeEscape )
+			// NCalc.g:282:4: '\\\\' ( 'n' | 'r' | 't' | '\\'' | '\\\\' | UnicodeEscape )
 			{
 			DebugLocation(282, 4);
 			Match('\\'); 
 			DebugLocation(283, 4);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:283:4: ( 'n' | 'r' | 't' | '\\'' | '\\\\' | UnicodeEscape )
+			// NCalc.g:283:4: ( 'n' | 'r' | 't' | '\\'' | '\\\\' | UnicodeEscape )
 			int alt13=6;
 			try { DebugEnterSubRule(13);
 			try { DebugEnterDecision(13, decisionCanBacktrack[13]);
@@ -2132,7 +2166,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:284:5: 'n'
+				// NCalc.g:284:5: 'n'
 				{
 				DebugLocation(284, 5);
 				Match('n'); 
@@ -2141,7 +2175,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:285:4: 'r'
+				// NCalc.g:285:4: 'r'
 				{
 				DebugLocation(285, 4);
 				Match('r'); 
@@ -2150,7 +2184,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				break;
 			case 3:
 				DebugEnterAlt(3);
-				// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:286:4: 't'
+				// NCalc.g:286:4: 't'
 				{
 				DebugLocation(286, 4);
 				Match('t'); 
@@ -2159,7 +2193,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				break;
 			case 4:
 				DebugEnterAlt(4);
-				// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:287:4: '\\''
+				// NCalc.g:287:4: '\\''
 				{
 				DebugLocation(287, 4);
 				Match('\''); 
@@ -2168,7 +2202,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				break;
 			case 5:
 				DebugEnterAlt(5);
-				// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:288:4: '\\\\'
+				// NCalc.g:288:4: '\\\\'
 				{
 				DebugLocation(288, 4);
 				Match('\\'); 
@@ -2177,7 +2211,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				break;
 			case 6:
 				DebugEnterAlt(6);
-				// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:289:4: UnicodeEscape
+				// NCalc.g:289:4: UnicodeEscape
 				{
 				DebugLocation(289, 4);
 				mUnicodeEscape(); 
@@ -2213,11 +2247,11 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		TraceIn("HexDigit", 43);
 		try
 		{
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:294:2: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+			// NCalc.g:294:2: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:
+			// NCalc.g:294:5: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
 			{
-			DebugLocation(294, 2);
+			DebugLocation(294, 5);
 			if ((input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='F')||(input.LA(1)>='a' && input.LA(1)<='f'))
 			{
 				input.Consume();
@@ -2255,9 +2289,9 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		TraceIn("UnicodeEscape", 44);
 		try
 		{
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:298:6: ( 'u' HexDigit HexDigit HexDigit HexDigit )
+			// NCalc.g:298:6: ( 'u' HexDigit HexDigit HexDigit HexDigit )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:298:12: 'u' HexDigit HexDigit HexDigit HexDigit
+			// NCalc.g:298:12: 'u' HexDigit HexDigit HexDigit HexDigit
 			{
 			DebugLocation(298, 12);
 			Match('u'); 
@@ -2296,9 +2330,9 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 			int _type = WS;
 			int _channel = DefaultTokenChannel;
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:302:4: ( ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) )
+			// NCalc.g:302:4: ( ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' ) )
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:302:7: ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' )
+			// NCalc.g:302:7: ( ' ' | '\\r' | '\\t' | '\\u000C' | '\\n' )
 			{
 			DebugLocation(302, 7);
 			if ((input.LA(1)>='\t' && input.LA(1)<='\n')||(input.LA(1)>='\f' && input.LA(1)<='\r')||input.LA(1)==' ')
@@ -2332,7 +2366,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 
 	public override void mTokens()
 	{
-		// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:8: ( T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | TRUE | FALSE | ID | INTEGER | FLOAT | STRING | DATETIME | NAME | E | WS )
+		// NCalc.g:1:8: ( T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | TRUE | FALSE | ID | INTEGER | FLOAT | STRING | DATETIME | NAME | E | WS )
 		int alt14=40;
 		try { DebugEnterDecision(14, decisionCanBacktrack[14]);
 		try
@@ -2349,7 +2383,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 		{
 		case 1:
 			DebugEnterAlt(1);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:10: T__19
+			// NCalc.g:1:10: T__19
 			{
 			DebugLocation(1, 10);
 			mT__19(); 
@@ -2358,7 +2392,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 2:
 			DebugEnterAlt(2);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:16: T__20
+			// NCalc.g:1:16: T__20
 			{
 			DebugLocation(1, 16);
 			mT__20(); 
@@ -2367,7 +2401,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 3:
 			DebugEnterAlt(3);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:22: T__21
+			// NCalc.g:1:22: T__21
 			{
 			DebugLocation(1, 22);
 			mT__21(); 
@@ -2376,7 +2410,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 4:
 			DebugEnterAlt(4);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:28: T__22
+			// NCalc.g:1:28: T__22
 			{
 			DebugLocation(1, 28);
 			mT__22(); 
@@ -2385,7 +2419,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 5:
 			DebugEnterAlt(5);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:34: T__23
+			// NCalc.g:1:34: T__23
 			{
 			DebugLocation(1, 34);
 			mT__23(); 
@@ -2394,7 +2428,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 6:
 			DebugEnterAlt(6);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:40: T__24
+			// NCalc.g:1:40: T__24
 			{
 			DebugLocation(1, 40);
 			mT__24(); 
@@ -2403,7 +2437,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 7:
 			DebugEnterAlt(7);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:46: T__25
+			// NCalc.g:1:46: T__25
 			{
 			DebugLocation(1, 46);
 			mT__25(); 
@@ -2412,7 +2446,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 8:
 			DebugEnterAlt(8);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:52: T__26
+			// NCalc.g:1:52: T__26
 			{
 			DebugLocation(1, 52);
 			mT__26(); 
@@ -2421,7 +2455,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 9:
 			DebugEnterAlt(9);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:58: T__27
+			// NCalc.g:1:58: T__27
 			{
 			DebugLocation(1, 58);
 			mT__27(); 
@@ -2430,7 +2464,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 10:
 			DebugEnterAlt(10);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:64: T__28
+			// NCalc.g:1:64: T__28
 			{
 			DebugLocation(1, 64);
 			mT__28(); 
@@ -2439,7 +2473,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 11:
 			DebugEnterAlt(11);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:70: T__29
+			// NCalc.g:1:70: T__29
 			{
 			DebugLocation(1, 70);
 			mT__29(); 
@@ -2448,7 +2482,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 12:
 			DebugEnterAlt(12);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:76: T__30
+			// NCalc.g:1:76: T__30
 			{
 			DebugLocation(1, 76);
 			mT__30(); 
@@ -2457,7 +2491,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 13:
 			DebugEnterAlt(13);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:82: T__31
+			// NCalc.g:1:82: T__31
 			{
 			DebugLocation(1, 82);
 			mT__31(); 
@@ -2466,7 +2500,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 14:
 			DebugEnterAlt(14);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:88: T__32
+			// NCalc.g:1:88: T__32
 			{
 			DebugLocation(1, 88);
 			mT__32(); 
@@ -2475,7 +2509,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 15:
 			DebugEnterAlt(15);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:94: T__33
+			// NCalc.g:1:94: T__33
 			{
 			DebugLocation(1, 94);
 			mT__33(); 
@@ -2484,7 +2518,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 16:
 			DebugEnterAlt(16);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:100: T__34
+			// NCalc.g:1:100: T__34
 			{
 			DebugLocation(1, 100);
 			mT__34(); 
@@ -2493,7 +2527,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 17:
 			DebugEnterAlt(17);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:106: T__35
+			// NCalc.g:1:106: T__35
 			{
 			DebugLocation(1, 106);
 			mT__35(); 
@@ -2502,7 +2536,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 18:
 			DebugEnterAlt(18);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:112: T__36
+			// NCalc.g:1:112: T__36
 			{
 			DebugLocation(1, 112);
 			mT__36(); 
@@ -2511,7 +2545,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 19:
 			DebugEnterAlt(19);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:118: T__37
+			// NCalc.g:1:118: T__37
 			{
 			DebugLocation(1, 118);
 			mT__37(); 
@@ -2520,7 +2554,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 20:
 			DebugEnterAlt(20);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:124: T__38
+			// NCalc.g:1:124: T__38
 			{
 			DebugLocation(1, 124);
 			mT__38(); 
@@ -2529,7 +2563,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 21:
 			DebugEnterAlt(21);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:130: T__39
+			// NCalc.g:1:130: T__39
 			{
 			DebugLocation(1, 130);
 			mT__39(); 
@@ -2538,7 +2572,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 22:
 			DebugEnterAlt(22);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:136: T__40
+			// NCalc.g:1:136: T__40
 			{
 			DebugLocation(1, 136);
 			mT__40(); 
@@ -2547,7 +2581,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 23:
 			DebugEnterAlt(23);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:142: T__41
+			// NCalc.g:1:142: T__41
 			{
 			DebugLocation(1, 142);
 			mT__41(); 
@@ -2556,7 +2590,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 24:
 			DebugEnterAlt(24);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:148: T__42
+			// NCalc.g:1:148: T__42
 			{
 			DebugLocation(1, 148);
 			mT__42(); 
@@ -2565,7 +2599,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 25:
 			DebugEnterAlt(25);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:154: T__43
+			// NCalc.g:1:154: T__43
 			{
 			DebugLocation(1, 154);
 			mT__43(); 
@@ -2574,7 +2608,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 26:
 			DebugEnterAlt(26);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:160: T__44
+			// NCalc.g:1:160: T__44
 			{
 			DebugLocation(1, 160);
 			mT__44(); 
@@ -2583,7 +2617,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 27:
 			DebugEnterAlt(27);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:166: T__45
+			// NCalc.g:1:166: T__45
 			{
 			DebugLocation(1, 166);
 			mT__45(); 
@@ -2592,7 +2626,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 28:
 			DebugEnterAlt(28);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:172: T__46
+			// NCalc.g:1:172: T__46
 			{
 			DebugLocation(1, 172);
 			mT__46(); 
@@ -2601,7 +2635,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 29:
 			DebugEnterAlt(29);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:178: T__47
+			// NCalc.g:1:178: T__47
 			{
 			DebugLocation(1, 178);
 			mT__47(); 
@@ -2610,7 +2644,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 30:
 			DebugEnterAlt(30);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:184: T__48
+			// NCalc.g:1:184: T__48
 			{
 			DebugLocation(1, 184);
 			mT__48(); 
@@ -2619,7 +2653,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 31:
 			DebugEnterAlt(31);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:190: TRUE
+			// NCalc.g:1:190: TRUE
 			{
 			DebugLocation(1, 190);
 			mTRUE(); 
@@ -2628,7 +2662,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 32:
 			DebugEnterAlt(32);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:195: FALSE
+			// NCalc.g:1:195: FALSE
 			{
 			DebugLocation(1, 195);
 			mFALSE(); 
@@ -2637,7 +2671,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 33:
 			DebugEnterAlt(33);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:201: ID
+			// NCalc.g:1:201: ID
 			{
 			DebugLocation(1, 201);
 			mID(); 
@@ -2646,7 +2680,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 34:
 			DebugEnterAlt(34);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:204: INTEGER
+			// NCalc.g:1:204: INTEGER
 			{
 			DebugLocation(1, 204);
 			mINTEGER(); 
@@ -2655,7 +2689,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 35:
 			DebugEnterAlt(35);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:212: FLOAT
+			// NCalc.g:1:212: FLOAT
 			{
 			DebugLocation(1, 212);
 			mFLOAT(); 
@@ -2664,7 +2698,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 36:
 			DebugEnterAlt(36);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:218: STRING
+			// NCalc.g:1:218: STRING
 			{
 			DebugLocation(1, 218);
 			mSTRING(); 
@@ -2673,7 +2707,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 37:
 			DebugEnterAlt(37);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:225: DATETIME
+			// NCalc.g:1:225: DATETIME
 			{
 			DebugLocation(1, 225);
 			mDATETIME(); 
@@ -2682,7 +2716,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 38:
 			DebugEnterAlt(38);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:234: NAME
+			// NCalc.g:1:234: NAME
 			{
 			DebugLocation(1, 234);
 			mNAME(); 
@@ -2691,7 +2725,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 39:
 			DebugEnterAlt(39);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:239: E
+			// NCalc.g:1:239: E
 			{
 			DebugLocation(1, 239);
 			mE(); 
@@ -2700,7 +2734,7 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 			break;
 		case 40:
 			DebugEnterAlt(40);
-			// C:\\Users\\sebros\\My Projects\\NCalc\\Grammar\\NCalc.g:1:241: WS
+			// NCalc.g:1:241: WS
 			{
 			DebugLocation(1, 241);
 			mWS(); 
@@ -2788,60 +2822,59 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 	private class DFA14 : DFA
 	{
 		private const string DFA14_eotS =
-			"\x1\xFFFF\x1\x21\x1\xFFFF\x1\x23\x8\xFFFF\x1\x27\x1\x29\x1\x2C\x2\xFFFF"+
-			"\x3\x1E\x1\x31\x1\xFFFF\x3\x1E\x1\x36\x13\xFFFF\x2\x1E\x1\x39\x2\xFFFF"+
-			"\x3\x1E\x2\xFFFF\x1\x3C\x1\x3D\x1\xFFFF\x2\x1E\x2\xFFFF\x1\x40\x1\x1E"+
-			"\x1\xFFFF\x1\x42\x1\xFFFF";
+			"\x3\xFFFF\x1\x21\x1\x1E\x1\x24\x1\x1E\x1\xFFFF\x1\x27\x1\x29\x1\x2D"+
+			"\x1\x30\x5\xFFFF\x1\x1E\x4\xFFFF\x3\x1E\x1\x36\x8\xFFFF\x1\x37\x2\xFFFF"+
+			"\x1\x1E\xB\xFFFF\x4\x1E\x3\xFFFF\x1\x3C\x1\x3D\x2\x1E\x2\xFFFF\x1\x40"+
+			"\x1\x1E\x1\xFFFF\x1\x42\x1\xFFFF";
 		private const string DFA14_eofS =
 			"\x43\xFFFF";
 		private const string DFA14_minS =
-			"\x1\x9\x1\x3D\x1\xFFFF\x1\x26\x8\xFFFF\x1\x3C\x2\x3D\x2\xFFFF\x1\x6E"+
-			"\x1\x6F\x1\x72\x1\x7C\x1\xFFFF\x1\x72\x1\x61\x1\x2B\x1\x2E\x13\xFFFF"+
-			"\x1\x64\x1\x74\x1\x30\x2\xFFFF\x1\x75\x1\x6C\x1\x30\x2\xFFFF\x2\x30\x1"+
-			"\xFFFF\x1\x65\x1\x73\x2\xFFFF\x1\x30\x1\x65\x1\xFFFF\x1\x30\x1\xFFFF";
+			"\x1\x9\x2\xFFFF\x1\x7C\x1\x72\x1\x26\x1\x6E\x1\xFFFF\x2\x3D\x1\x3C\x1"+
+			"\x3D\x5\xFFFF\x1\x6F\x4\xFFFF\x1\x72\x1\x61\x1\x2B\x1\x2E\x8\xFFFF\x1"+
+			"\x30\x2\xFFFF\x1\x64\xB\xFFFF\x1\x74\x1\x75\x1\x6C\x1\x30\x3\xFFFF\x2"+
+			"\x30\x1\x65\x1\x73\x2\xFFFF\x1\x30\x1\x65\x1\xFFFF\x1\x30\x1\xFFFF";
 		private const string DFA14_maxS =
-			"\x1\x7E\x1\x3D\x1\xFFFF\x1\x26\x8\xFFFF\x1\x3E\x1\x3D\x1\x3E\x2\xFFFF"+
-			"\x1\x6E\x1\x6F\x1\x72\x1\x7C\x1\xFFFF\x1\x72\x1\x61\x1\x39\x1\x65\x13"+
-			"\xFFFF\x1\x64\x1\x74\x1\x7A\x2\xFFFF\x1\x75\x1\x6C\x1\x39\x2\xFFFF\x2"+
-			"\x7A\x1\xFFFF\x1\x65\x1\x73\x2\xFFFF\x1\x7A\x1\x65\x1\xFFFF\x1\x7A\x1"+
-			"\xFFFF";
+			"\x1\x7E\x2\xFFFF\x1\x7C\x1\x72\x1\x26\x1\x6E\x1\xFFFF\x2\x3D\x2\x3E"+
+			"\x5\xFFFF\x1\x6F\x4\xFFFF\x1\x72\x1\x61\x1\x39\x1\x65\x8\xFFFF\x1\x7A"+
+			"\x2\xFFFF\x1\x64\xB\xFFFF\x1\x74\x1\x75\x1\x6C\x1\x39\x3\xFFFF\x2\x7A"+
+			"\x1\x65\x1\x73\x2\xFFFF\x1\x7A\x1\x65\x1\xFFFF\x1\x7A\x1\xFFFF";
 		private const string DFA14_acceptS =
-			"\x2\xFFFF\x1\x3\x1\xFFFF\x1\x6\x1\x7\x1\x8\x1\x9\x1\xA\x1\xB\x1\xC\x1"+
-			"\xD\x3\xFFFF\x1\x17\x1\x18\x4\xFFFF\x1\x1E\x4\xFFFF\x1\x23\x1\x24\x1"+
-			"\x25\x1\x26\x1\x21\x1\x28\x1\x2\x1\x1\x1\x4\x1\x5\x1\xF\x1\x10\x1\x11"+
-			"\x1\xE\x1\x13\x1\x12\x1\x15\x1\x16\x1\x14\x3\xFFFF\x1\x1D\x1\x1C\x3\xFFFF"+
-			"\x1\x27\x1\x22\x2\xFFFF\x1\x1B\x2\xFFFF\x1\x19\x1\x1A\x2\xFFFF\x1\x1F"+
-			"\x1\xFFFF\x1\x20";
+			"\x1\xFFFF\x1\x1\x1\x2\x4\xFFFF\x1\x8\x4\xFFFF\x1\x14\x1\x15\x1\x16\x1"+
+			"\x17\x1\x18\x1\xFFFF\x1\x1B\x1\x1C\x1\x1D\x1\x1E\x4\xFFFF\x1\x23\x1\x24"+
+			"\x1\x25\x1\x26\x1\x21\x1\x28\x1\x3\x1\x7\x1\xFFFF\x1\x5\x1\x9\x1\xFFFF"+
+			"\x1\xA\x1\xB\x1\xC\x1\x19\x1\xD\x1\xF\x1\x12\x1\xE\x1\x11\x1\x13\x1\x10"+
+			"\x4\xFFFF\x1\x27\x1\x22\x1\x4\x4\xFFFF\x1\x6\x1\x1A\x2\xFFFF\x1\x1F\x1"+
+			"\xFFFF\x1\x20";
 		private const string DFA14_specialS =
 			"\x43\xFFFF}>";
 		private static readonly string[] DFA14_transitionS =
 			{
-				"\x2\x1F\x1\xFFFF\x2\x1F\x12\xFFFF\x1\x1F\x1\x1\x1\xFFFF\x1\x1C\x1\xFFFF"+
-				"\x1\x2\x1\x3\x1\x1B\x1\x4\x1\x5\x1\x6\x1\x7\x1\x8\x1\x9\x1\x1A\x1\xA"+
-				"\xA\x19\x1\xB\x1\xFFFF\x1\xC\x1\xD\x1\xE\x1\xF\x1\xFFFF\x4\x1E\x1\x18"+
-				"\x15\x1E\x1\x1D\x2\xFFFF\x1\x10\x1\x1E\x1\xFFFF\x1\x11\x3\x1E\x1\x18"+
-				"\x1\x17\x7\x1E\x1\x12\x1\x13\x4\x1E\x1\x16\x6\x1E\x1\xFFFF\x1\x14\x1"+
-				"\xFFFF\x1\x15",
+				"\x2\x1F\x1\xFFFF\x2\x1F\x12\xFFFF\x1\x1F\x1\x9\x1\xFFFF\x1\x1C\x1\xFFFF"+
+				"\x1\x10\x1\x5\x1\x1B\x1\x13\x1\x14\x1\xE\x1\xC\x1\x15\x1\xD\x1\x1A\x1"+
+				"\xF\xA\x19\x1\x2\x1\xFFFF\x1\xA\x1\x8\x1\xB\x1\x1\x1\xFFFF\x4\x1E\x1"+
+				"\x18\x15\x1E\x1\x1D\x2\xFFFF\x1\x7\x1\x1E\x1\xFFFF\x1\x6\x3\x1E\x1\x18"+
+				"\x1\x17\x7\x1E\x1\x11\x1\x4\x4\x1E\x1\x16\x6\x1E\x1\xFFFF\x1\x3\x1\xFFFF"+
+				"\x1\x12",
+				"",
+				"",
 				"\x1\x20",
-				"",
 				"\x1\x22",
+				"\x1\x23",
+				"\x1\x25",
 				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"\x1\x24\x1\x25\x1\x26",
+				"\x1\x26",
 				"\x1\x28",
-				"\x1\x2A\x1\x2B",
+				"\x1\x2C\x1\x2B\x1\x2A",
+				"\x1\x2E\x1\x2F",
 				"",
 				"",
-				"\x1\x2D",
-				"\x1\x2E",
-				"\x1\x2F",
-				"\x1\x30",
+				"",
+				"",
+				"",
+				"\x1\x31",
+				"",
+				"",
+				"",
 				"",
 				"\x1\x32",
 				"\x1\x33",
@@ -2855,30 +2888,30 @@ public partial class NCalcLexer : Antlr.Runtime.Lexer
 				"",
 				"",
 				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"",
-				"\x1\x37",
-				"\x1\x38",
 				"\xA\x1E\x7\xFFFF\x1A\x1E\x4\xFFFF\x1\x1E\x1\xFFFF\x1A\x1E",
 				"",
 				"",
+				"\x1\x38",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"",
+				"\x1\x39",
 				"\x1\x3A",
 				"\x1\x3B",
 				"\xA\x34",
 				"",
 				"",
-				"\xA\x1E\x7\xFFFF\x1A\x1E\x4\xFFFF\x1\x1E\x1\xFFFF\x1A\x1E",
-				"\xA\x1E\x7\xFFFF\x1A\x1E\x4\xFFFF\x1\x1E\x1\xFFFF\x1A\x1E",
 				"",
+				"\xA\x1E\x7\xFFFF\x1A\x1E\x4\xFFFF\x1\x1E\x1\xFFFF\x1A\x1E",
+				"\xA\x1E\x7\xFFFF\x1A\x1E\x4\xFFFF\x1\x1E\x1\xFFFF\x1A\x1E",
 				"\x1\x3E",
 				"\x1\x3F",
 				"",
