@@ -87,7 +87,7 @@ namespace NCalc
                 foreach (string key in keysToRemove)
                 {
                     _compiledExpressions.Remove(key);
-                    Trace.TraceInformation("Cache entry released: " + key);
+                    //Trace.TraceInformation("Cache entry released: " + key);
                 }
             }
             finally
@@ -110,7 +110,7 @@ namespace NCalc
 
                     if (_compiledExpressions.ContainsKey(expression))
                     {
-                        Trace.TraceInformation("Expression retrieved from cache: " + expression);
+                        //Trace.TraceInformation("Expression retrieved from cache: " + expression);
                         var wr = _compiledExpressions[expression];
                         logicalExpression = wr.Target as LogicalExpression;
                     
@@ -152,7 +152,7 @@ namespace NCalc
 
                     CleanCache();
 
-                    Trace.TraceInformation("Expression added to cache: " + expression);
+                    //Trace.TraceInformation("Expression added to cache: " + expression);
                 }
             }
 
